@@ -1,0 +1,81 @@
+April:29
+
+ODIN_PROJECT
+Intro to Css.
+Basic syntax;
+At the most basic level, css is made up of various rules. These rules are made up of a selectors(more on this a bit) and a semicolon-separated list of decleration, with each of those decleration being made up of a property-value pair. 
+For example.
+div.bold-text{ font-weight: 700;}
+ div.bold-text = selector
+ font-weight: = property
+ 700; = value
+
+
+Selectors.
+1.Universal Selectors= *
+2. Type selector = div
+3.Class selector <div Class="aakash-text">
+                            ............ -> represented by (.) in css.
+ID selector = <div id = "learn-css"</div>
+                         ......... -> represem=nted by (#) in css.
+
+4.Grouping selector.
+eg.
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+5. Chaining selectors.
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection" id="preview">
+    This is where a preview for a post might go.
+  </p>
+</div>
+.subsection.header {
+  color: red;
+}
+.subsection#preview {
+  color: blue;
+}
+
+6.Descendent combinator.
+combinator allows to combine muliple selectors differrently than either Grouping or cleaning them  as they show a relationship between the selectors. It will always 
+
+
+
+April,30
+
+property to get started with;
+color:
+background-color:
+font-family:
+font-size:
+font-weight:
+text-align:
+
+BY default an <img> elememnt's height and weidth values will be the same as the actual imge file's height and weidth.
+so for this adjusting the size of the image without causing it lose its propositions use the 'auto' feature.
+
+img{
+    height:auto;
+    width:500px;
+}
+For example, if an image’s original size was 500px height and 1000px width, using the above CSS would result in a height of 250px.
+
+---------Adding css to html---------
+External css;
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+
+
+
+
