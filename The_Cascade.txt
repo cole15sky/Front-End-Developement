@@ -1,0 +1,30 @@
+30th April.
+The Cascade of css.
+ Sometimes we may have rules that conflicts with other and we ended with some unexpected results.
+  like the paragraphs needed to be blue instade of being red so it's kidda frustrating. One exception to this is the default styles that are provided by a browser.
+  so it it ends upp with some unexpect4d behaviorur like this this it's either because  of these default styles,not underastanding hoe property works ,or =not understanding this litte called Cascade.
+
+  The Cascade is what determines which rules actually get applied to our html.
+    Therefore here are the three factrorsb which will hopefully help us avoid frustrating.
+
+
+    Specificity.
+    A CSS declaration that is more specific will take precedence over less specific ones
+INLINE STYLE > Selectors // (>) = highest Specificity
+
+i.e
+1.ID selectors (most specific selector)
+2.Class selectors
+3.Type selectors
+
+Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it,sort of like a tie-breaker.
+ An ID selector will always beat any number of class selectors.
+ A class selector will always beat any number of type selectors, and a type selector will always beat any number of less specific selectors.
+  When there is no declaration with a selector of higher specificity, a rule with a greater number of selectors of the same type will take precedence over another rule with fewer selectors of the same type.
+Using a type selector, which has the lowest specificity value over  the universal selector (*) which has no specificity value.
+
+
+Inheritance.
+It's an css property that ,when applied to an element,are inherited by that element's descendants,even if we don't  explicitly write a rule for those descendants.
+Typography-based properties (color, font-size, font-family, etc.) are usually inherited, while most other properties aren’t.
+

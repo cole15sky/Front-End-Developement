@@ -51,7 +51,10 @@ April,30
 property to get started with;
 color:
 background-color:
-font-family:
+
+Typography;
+font-family:"Times New Roman", serif;
+                               ..... --> incase If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on until it finds a supported and valid font. 
 font-size:
 font-weight:
 text-align:
