@@ -1,0 +1,15 @@
+18:46:09
+
+-----------Line Break----------
+The spacing beteen code in an html file doesn't affect the positioning of elements in the browser.
+Modifying the spacing in the browser we can use html's line break element 
+i.e <br>
+
+The line break element is unique because it is only composed of a starting tag. 
+We can use it anywhere within our HTML code and a line break will be shown in the browser.
+The code in the example above will result in an output that looks like the following:
+
+The Nile River is the longest river
+in the world, measuring over 6,850
+kilometers long (approximately 4,260
+miles).
