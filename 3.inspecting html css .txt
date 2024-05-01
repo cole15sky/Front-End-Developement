@@ -1,0 +1,21 @@
+INSPECTING CSS & HTML
+
+Being able to inspect and debug the html and css is crutial to frontend development.
+Therefore, inspecting through chrome dev tools allowing to see detailed information on each html and css rules and fixing, finding the problems in the code.
+
+----------The Inspector----------
+To open the inspector, right click on any element of a a webpage  and click f12.
+
+--------Inspecting the elements.--------
+In element panel, you can see the entire html structure of your page.
+clicking the element in the panel to select the specific element.
+When an element is selected, the Styles tab will show all the currently applied styles, as well as any styles that are being overwritten (indicated by a strikethrough of the text).
+  
+   ------------Testing styles in the inspector----------
+   style panel allowing to edit the style directly in the browser.
+   Therefore, using the required calculation to divide the page or to specify the area of the webpage.
+
+   SHORTCUT KEYS FOR DEVELEOPER TOOLS.
+   1. CMD + OPTION + C = Element panel
+   2. CMD + OPTION + J = Jump to console
+   3. CMD +OPTION + I = Reload the current panel.
