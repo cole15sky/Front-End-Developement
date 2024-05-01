@@ -1,0 +1,10 @@
+Wednesday,May 1st. 
+============The box model.===========
+
+As the serious portion of css, the most important skill need to master with css are positioning and layout.
+Changing font and colors is a crucial skill,but being able to put things exactly where you want them on a webpage is even more important.
+
+-------------The box model--------------
+.every single thing overwritten a webpage is a rectangular box.
+.these boxes can have other boxes in them and sit alongside each.
+.
