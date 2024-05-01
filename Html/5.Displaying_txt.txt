@@ -1,0 +1,16 @@
+18:17:17
+
+If we want to dsiplay text in hmtl,we can use paragraph or span:
+paragraphs<P> contains a block of plain text.
+<span> comntins short pieces of texts or other html.They are used to seperate small pieces of content that are on the same line as other contents.
+e.g:
+<div>
+  <h1>Technology</h1>
+</div>
+<div>
+  <p><span>Sky learning </span> html css and js. </p>
+</div>
+
+
+In the example above, there are two different <div>. The second <div> contains a <p> with <span>Self-driving cars</span>. This <span> element separates “Self-driving cars” from the rest of the text in the paragraph.
+It’s best to use a <span> element when you want to target a specific piece of content that is inline, or on the same line as other text. If you want to divide your content into blocks, it’s better to use a <div>.
