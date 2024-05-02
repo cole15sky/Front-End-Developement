@@ -17,6 +17,7 @@ i.e
 2.Class selectors
 3.Type selectors
 
+
 Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it,sort of like a tie-breaker.
  An ID selector will always beat any number of class selectors.
  A class selector will always beat any number of type selectors, and a type selector will always beat any number of less specific selectors.
@@ -28,3 +29,18 @@ Inheritance.
 It's an css property that ,when applied to an element,are inherited by that element's descendants,even if we don't  explicitly write a rule for those descendants.
 Typography-based properties (color, font-size, font-family, etc.) are usually inherited, while most other properties aren’t.
 
+May 2, 10:55:55
+ Thursday,2024
+
+----------------INLINE_STYLES------------------
+Although css is a different language than html,it's possible to write  html code using inline style.
+To style an HTML element, we can add the style attribute directly to the opening tag. After we add the attribute, we can set it equal to the CSS style(s) we’d like applied to that element.
+
+<p style='color: red;'>I'm learning to code!</p>
+ 
+ The code in the example above demonstrates how to use inline styling. The paragraph element has a style attribute within its opening tag. Next, the style attribute is set equal to color: red;, which will set the color of the paragraph text to red within the browser.
+If we'd like to add more than one style with inline styles, simply keep adding to the style attribute. Make sure to end the styles with a semicolon (;).
+
+<p style='color: red; font-size: 20px;'>I'm learning to code!</p>
+
+It’s important to know that inline styles are a quick way of directly styling an HTML element, but are rarely used when creating websites. But you may encounter circumstances where inline styling is necessary, so understanding how it works, and recognizing it in HTML code is good knowledge to have. Soon you’ll learn the proper way to add CSS code!
