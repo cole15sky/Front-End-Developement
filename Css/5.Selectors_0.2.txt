@@ -53,3 +53,75 @@ A pseudo-class can be attached to any selector. It is always written as a colon 
   background-color: lime;
 } 
 In the above code, whenever the mouse hovers over a paragraph element, that paragraph will have a lime-colored background.
+
+
+----------------Classes and id---------------
+
+CSS can select HTML elements by their type, class, and ID. CSS classes and IDs have different purposes, which can affect which one you use to style HTML elements.
+CSS classes are meant to be reused over many elements. By writing CSS classes, you can style elements in a variety of ways by mixing classes. For instance, imagine a page with two headlines. One headline needs to be bold and blue, and the other needs to be bold and green. Instead of writing separate CSS rules for each headline that repeat each other’s code, it’s better to write a .bold CSS rule, a .green CSS rule, and a .blue CSS rule. Then you can give one headline the bold green classes, and the other the bold blue classes.
+While classes are meant to be used many times, an ID is meant to style only one element. As you’ll learn in the next exercise, IDs override the styles of types and classes. Since IDs override these styles, they should be used sparingly and only on elements that need to always appear the same.
+
+--------------specificity------------
+specificity is the order by which the browser deciedes which css styles to displayed.
+
+----------------chaining---------------
+When writting css rules,it's possible to require an html element to have two or more css selectors at the same time.
+this is done by combining multipple selectors which will refer to as chaining. for instance ,if there was a special class for <h1>b elements the css would look like  below;
+h1.special{   
+}
+the code above would select only the <h1> element with class of special. if a <p> element also had a class of special, the rule in the example would not style the paragraph.
+
+
+--------------Descendent Combinator------------
+In addition to chaining selectors to select elements, CSS also supports selecting elements that are nested within other HTML elements, also known as descendants. For instance, consider the following HTML:
+
+<ul class='main-list'>
+  <li> ... </li>
+  <li> ... </li>
+  <li> ... </li>
+</ul>
+
+The nested <li> elements are descendants of the <ul> element and can be selected with the descendant combinator like so:
+.main-list li {
+
+}
+
+In the example above, .main-list selects the element with the.main-list class (the <ul> element). The descendant <li>‘s are selected by adding li to the selector, separated by a space. This results in .main-list li as the final selector.
+Selecting elements in this way can make our selectors even more specific by making sure they appear in the context we expect.
+
+-----------------Chaining and Specificity---------------
+
+For instance, consider the following CSS:
+
+p {
+  color: blue;
+}
+
+.main p {
+  color: red;
+}
+
+Both of these CSS rules define what a <p> element should look like. 
+Since .main p has a class and a p type as its selector, only the <p> elements inside the .main element will appear red.
+ This occurs despite there being another more general rule that states <p> elements should be blue.
+
+Multiple Selectors
+In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. This prevents writing repetitive code.
+For instance, the following code has repetitive style attributes:
+
+h1 {
+  font-family: Georgia;
+}
+
+.menu {
+  font-family: Georgia;
+}
+
+Instead of writing font-family: Georgia twice for two selectors, we can separate the selectors by a comma to apply the same style to both, like this:
+
+h1, 
+.menu {
+  font-family: Georgia;
+}
+
+By separating the CSS selectors with a comma, both the <h1> elements and the elements with the menu class will receive the font-family: Georgia styling.
