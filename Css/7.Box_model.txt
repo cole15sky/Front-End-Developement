@@ -1,7 +1,7 @@
 May 3, 11:11:55
 Friday
 
---------------------Introduvction to box model-----------------------
+--------------------Introduction to box model-----------------------
 browser load html elements with defult position values.This often leads to an unexpected and unwanted user experience while limiting the views you can create.
 
  we  have used HTML and CSS and  have unknowingly seen aspects of the box model. For example, if we have set the background color of an element, we may have noticed that the color was applied not only to the area directly behind the element but also to the area to the right of the element. Also, if we have aligned text, we know it is aligned relative to something. 
@@ -55,6 +55,33 @@ p.content-header {
 }
 
 In this example, the border style is set to solid and the color is set to coral. The width is not set, so it defaults to medium.
+
+
+
+
+May 4, 11:17:52 
+Saturday.
+
+------------------Borders radius---------------
+Ever since we noticed that the border highlights the true shape of an element's box square.
+we can modify the corners of the element's border box with the border-radius property
+
+ div.container{
+    border: 3px solid blue;
+    border-radius:5px;
+ } 
+  The code in the example above will set four corners of the border to radius of 5pixel (i.e the same curvature thayt a circle with  a radius of 5px would have
+
+[Note:we can create a border that is perfectly circle by first creating an element with the same width with the same width and height ,and then setting the radius equal to half the width of the box,which is 50%.]
+
+
+div.container{
+    height:60px;
+    width:60px;
+    border:30px solid blue ;
+    border radius: 50%;
+}
+The code in the example above creates a <div> that is a perfect circle.
 
 
 
