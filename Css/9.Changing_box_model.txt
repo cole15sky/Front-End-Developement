@@ -22,9 +22,19 @@ In the example above, a heading element’s box has solid, black, 1 pixel thick 
 Unfortunately, under the current box model, the border thickness and the padding will affect the dimensions of the box.
 
 The 10 pixels of padding increases the height of the box to 220 pixels and the width to 320 pixels. Next, the 1-pixel thick border increases the height to 222 pixels and the width to 322 pixels.
-
 Under this box model, the border thickness and padding are added to the overall dimensions of the box. This makes it difficult to accurately size a box. Over time, this can also make all of a web page’s content difficult to position and manage.
 
+
+
+
+
+--------------------Box Model---------------------
+Many poperties in css have a deafult value and don't have to be explicitly set in the stylesheet.
+For example, the default font-weight of text is normal, but this property-value pair is not typically specified in a stylesheet.
+
+The same can be said about the box model that browsers assume. In CSS, the box-sizing property controls the type of box model the browser should use when interpreting a web page.
+
+The default value of this property is content-box. This is the same box model that is affected by border thickness and padding.
 
 
 
