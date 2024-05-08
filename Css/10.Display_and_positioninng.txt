@@ -1,0 +1,9 @@
+
+Wednesday, 8th May
+10:25:37
+
+
+--------------Flow of html-------------
+ A browser will render the elements of an html document that has no css from left to right,top to bottom in the same order as they exist in the documents.
+this is called the flow of element in html.
+In addition to the properties that it provides to style html elements, css includes 
