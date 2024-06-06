@@ -17,4 +17,3 @@ There are only a few things we can do with variables:
 
 It is important to distinguish that variables are not values; they contain values and represent them with a name. Observe the diagram with the colored boxes. Each box represents variables; the values are represented by the content, and the name is represented with the label.
 
-Here, we will cover how to use the var, let, and const keywords to create variables.
