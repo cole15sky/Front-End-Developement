@@ -4,8 +4,6 @@ May 8, Wednesday
 -------------------------Intro_JS----------------------
 
          What is JavaScript?
-Last year, millions of learners from the community started with JavaScript.
-                Why?
  ------------> JavaScript is primarily known as the language of most modern web browsers, and its early quirks gave it a bit of a bad reputation. However, the language has continued to evolve and improve.
   JavaScript is a powerful, flexible, and fast programming language now being used for increasingly complex web development and beyond!
 
@@ -208,3 +206,19 @@ Then, Math.floor() rounds the number down to the nearest whole number.
 If we wanted to see the number printed to the terminal, we would still need to use a console.log() statement:
 
 console.log(Math.floor(Math.random() * 50)); // Prints a random whole number between 0 and 50
+
+---------Javascript variable:----------*/
+
+//global scope or function scope
+var varVariable = "This is var variable"
+//block scope
+let letVariable = "This is let variable"
+//block scope
+const constVariable = "this is const variable"
+console.log(window.varVariable)
+// both variable defined with let and const are undefined in window object
+console.log(window.letVariable)
+console.log(window.contVariable)
+console.log(varVariable)
+console.log(letVariable)
+console.log(constVariable)
