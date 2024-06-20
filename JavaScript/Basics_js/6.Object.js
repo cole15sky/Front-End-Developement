@@ -26,9 +26,7 @@ document.write(emp.id+" "+emp.name+" "+emp.salary);
 // 3.By using constructor (using new keywords)
 // We need to create function with arguments. Each arguments value can be assisgned in the current objet by using keyword.
 // The this is refers to the currernt object.
-// syntax;
-
-// <script>  
+//eg  
 function emp(id,name,salary){  
 this.id=id;  
 this.name=name;  
