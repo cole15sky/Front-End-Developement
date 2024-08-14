@@ -20,3 +20,22 @@ function checkNumber(num){
 }
 
 checkNumber(3);
+
+
+//The function smallerNumber will be given two unequal numbers: num1 and num2.
+// goal is to find the smaller number and return it!
+//smallerNumber(3, 6);
+
+//Answer: 3
+
+
+function smallerNumber(num1,num2){
+    if(num1 > num2){
+        console.log(`${num2}`)
+    }
+    else{
+        console.log(`${num1}`)
+    }
+}
+
+smallerNumber(3,6);
