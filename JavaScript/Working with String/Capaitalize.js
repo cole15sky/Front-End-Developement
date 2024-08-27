@@ -1,4 +1,4 @@
-//C apatilize the String
+//Capatilize the String
 
 
 function capitalizeFirstLetter(str){
