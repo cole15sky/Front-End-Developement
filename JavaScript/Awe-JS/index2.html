@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 20px;
+            border: 2px solid;
+        }
+
+        .carousal {
+            display: flex;
+            width: 500px;
+            height: 200px;
+            overflow: scroll;
+            scrollbar-width: 0;
+            scrollbar-color: transparent transparent;
+        }
+
+        .carousal div {
+            min-width: 100%;
+            min-height: 100%;
+            background-color: yellow;
+            transition: 0.5s ease-in-out;
+            margin: 10px;
+        }
+
+        /* .carousal :nth-child(1) {order: 1}
+        .carousal :nth-child(2) {order: 2}
+        .carousal :nth-child(3) {order: 3}
+        .carousal :nth-child(4) {order: 4}
+        .carousal :nth-child(5) {order: 5} */
+    </style>
+</head>
+
+<body>
+    <div>
+        Dolore tempor sunt occaecat velit consectetur culpa et. Nisi tempor ea et esse in duis non magna minim
+        adipisicing dolor cillum officia. Id tempor elit tempor laboris ea ea aute. Laboris aute exercitation velit
+        ipsum commodo tempor cupidatat dolore cupidatat consequat.
+    </div>
+
+    <div class="carousal">
+        <div style="display: block;">content 1</div>
+        <div style="display: block;">content 2</div>
+        <div style="display: block;">content 3</div>
+        <div style="display: block;">content 4</div>
+        <div style="display: block;">content 5</div>
+    </div>
+
+    <div>
+        Aute deserunt non mollit id Lorem. Ea veniam est elit ullamco velit ea est anim eiusmod laboris deserunt. Ad
+        quis ut exercitation dolor quis. Esse mollit irure sunt labore. Sit voluptate et duis nulla nostrud esse esse ex
+        adipisicing fugiat aliquip commodo labore. Aute excepteur nisi tempor nisi aute excepteur aute deserunt
+        incididunt consequat sunt sunt sit sunt. Laboris esse enim esse irure sint tempor.
+    </div>
+
+    <div>
+        Aute deserunt non mollit id Lorem. Ea veniam est elit ullamco velit ea est anim eiusmod laboris deserunt. Ad
+        quis ut exercitation dolor quis. Esse mollit irure sunt labore. Sit voluptate et duis nulla nostrud esse esse ex
+        adipisicing fugiat aliquip commodo labore. Aute excepteur nisi tempor nisi aute excepteur aute deserunt
+        incididunt consequat sunt sunt sit sunt. Laboris esse enim esse irure sint tempor.
+    </div>
+    <div>
+        Aute deserunt non mollit id Lorem. Ea veniam est elit ullamco velit ea est anim eiusmod laboris deserunt. Ad
+        quis ut exercitation dolor quis. Esse mollit irure sunt labore. Sit voluptate et duis nulla nostrud esse esse ex
+        adipisicing fugiat aliquip commodo labore. Aute excepteur nisi tempor nisi aute excepteur aute deserunt
+        incididunt consequat sunt sunt sit sunt. Laboris esse enim esse irure sint tempor.
+    </div>
+    <div>
+        Aute deserunt non mollit id Lorem. Ea veniam est elit ullamco velit ea est anim eiusmod laboris deserunt. Ad
+        quis ut exercitation dolor quis. Esse mollit irure sunt labore. Sit voluptate et duis nulla nostrud esse esse ex
+        adipisicing fugiat aliquip commodo labore. Aute excepteur nisi tempor nisi aute excepteur aute deserunt
+        incididunt consequat sunt sunt sit sunt. Laboris esse enim esse irure sint tempor.
+    </div>
+    <div>
+        Aute deserunt non mollit id Lorem. Ea veniam est elit ullamco velit ea est anim eiusmod laboris deserunt. Ad
+        quis ut exercitation dolor quis. Esse mollit irure sunt labore. Sit voluptate et duis nulla nostrud esse esse ex
+        adipisicing fugiat aliquip commodo labore. Aute excepteur nisi tempor nisi aute excepteur aute deserunt
+        incididunt consequat sunt sunt sit sunt. Laboris esse enim esse irure sint tempor.
+    </div>
+
+
+    <script>
+
+        const div = document.querySelector(".carousal");
+        let innerDiv = document.querySelectorAll(".carousal>div");
+
+        let id = 1;
+
+        div.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            if (id < 5) {
+                const direction = event.deltaY > 0 ? "up" : "down";
+
+
+                if (direction === "down") {
+                    // alert("down");
+                    let rect = innerDiv[id].getBoundingClientRect();
+
+                    id += 1
+                    div.scrollLeft += rect.width;
+                }
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>
